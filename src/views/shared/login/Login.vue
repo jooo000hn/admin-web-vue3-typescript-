@@ -45,8 +45,13 @@ export default class Login extends Vue {
     this.$refs[formType].validate((valid: boolean) => {
       if (valid) {
         alert('submit!');
+        console.log(this.$route.query.backUrl)
         this.$cookie.set(authEmail, this.loginForm.email, {expires: 1, domain: 'localhost'});
-        this.$router.push(this.$route.query.backUrl);
+        if (this.$route.query.backUrl) {
+          this.$router.push(this.$route.query.backUrl);
+        } else {
+          this.$router.push('/');
+        }
       } else {
         console.log('error submit!!');
         return false;
