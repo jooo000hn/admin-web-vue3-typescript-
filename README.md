@@ -23,3 +23,13 @@
 * 4、实际开发项目配置后端接口请求的地址在`src/api`中不同的环境配置
 * 5、本项目使用`vue-cookie`作为存储用户信息用于登录拦截
   * 1.在`src/config`中配置常量
+
+### 三、页面展示
+
+* 1、登录页面
+
+  ![登录](https://github.com/kuangshp/admin-web-vue3-typescript-/blob/master/%E7%99%BB%E5%BD%95.png)
+
+* 2、主页面
+
+  ![主页面](https://github.com/kuangshp/admin-web-vue3-typescript-/blob/master/demo.png)
